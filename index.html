@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's hot dog</title>
+    <style>
+        body{
+            background-color: rgb(171, 216, 222);
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Arial Black', sans-serif; 
+            font-size: 36px; 
+            color: rgb(51,51,51);
+            letter-spacing: 2px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(51,51,51);
+
+        }
+
+        .items-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .food-item {
+            flex: 0 0 calc(33.33% - 10px); 
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        .food-pic {
+            height: 200px; 
+            overflow: hidden;
+        }
+
+        .food-pic img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 20px; 
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #348737;
+        }
+
+        #showOrder {
+            font-family: 'Arial Black', sans-serif;
+            text-align: center; 
+            padding: 20px; 
+            border: 2px solid black; 
+            border-radius: 10px; 
+            width: 80%; 
+            margin: 0 auto; 
+        }
+
+
+        #showOrder p {
+            margin: 10px 0; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1> JOE'S HOTDOG STAND</h1>
+
+    
+    <div id="showOrder" style="display: none;"></div>
+    <button onclick="getorder()">Order</button>
+    
+
+    <h2> Items:</h2>
+
+    <div class="items-container">
+        <div class="food-item">
+            <div class="food-pic">
+                <img src="Hotdog.jpg" alt="Hot Dog">
+            </div>
+            <div class="food-text">
+                <p>HotDog</p>
+                <p>$4.65</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <div class="food-pic">
+                <img src="fries.jpg" alt="Fries">
+            </div>
+            <div class="food-text">
+                <p>Fries</p>
+                <p>$3.75</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <div class="food-pic">
+                <img src="drinks.jpg" alt="Drinks">
+            </div>
+            <div class="food-text">
+                <p>Drinks</p>
+                <p>$1.89</p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
