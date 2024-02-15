@@ -6,8 +6,9 @@
     <title>Joe's hot dog</title>
     <style>
         body{
-            background-color: rgb(171, 216, 222);
+            background-color: rgb(215, 105, 93);
             text-align: center;
+            
         }
         h1 {
             font-family: 'Arial Black', sans-serif; 
@@ -16,6 +17,7 @@
             letter-spacing: 2px;
             margin: 20px 0;
             text-align: center;
+            
         }
 
         h2 {
@@ -53,7 +55,6 @@
         button {
             margin-top: 20px; 
             background-color: rgb(76,175,80);
-            
             border: none;
             color: rgb(255,255,255);
             padding: 15px 32px;
@@ -82,10 +83,53 @@
         #showOrder p {
             margin: 10px 0; 
         }
+        nav {
+            background-color: rgb(55, 25, 25);
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            width: 50px;
+            height: 50px;
+            margin: 0 20px;
+        }
+
+        .navbar-text {
+            font-size: 24px;
+        }
+
+        footer {
+            background-color: rgb(55, 25, 25);
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 16px;
+        }
 
     </style>
 </head>
 <body>
+    <nav>
+        <div>
+            <img src="hotdogStand.jpg" alt="Left Logo" class="navbar-logo">
+        </div>
+        <div class="navbar-text">Special discount if you spend $25!!!!</div>
+        <div>
+            <img src="hotdogStand.jpg" alt="Right Logo" class="navbar-logo">
+        </div>
+    </nav>
     <!-- Title-->
     <h1> JOE'S HOTDOG STAND</h1>
 
@@ -129,6 +173,15 @@
     </div>
 
     
+    <footer>
+        <img src="hotdogStand.jpg" alt="Hot Dog Logo" class="footer-logo"><br>
+        <div class="contact-info">
+            <p>Contact Us:</p>
+            <p>Email: joesdogs@gmail.com</p>
+            <p>Phone: 442-552-6622</p>
+            <p>Address: 1600 Pennsylvania Avenue NW, Washington, DC 20500</p>
+        </div>
+    </footer>
     <!-- Including the script-->
     <script src="index.js"></script>
     
