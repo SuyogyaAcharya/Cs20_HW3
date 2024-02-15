@@ -4,10 +4,13 @@ const drinksprice = 1.89;
 
 
 function showMoney(fpNum) {
+    // rounding the num and getting it to a string
     let roundedNum = Math.round(fpNum * 100) / 100;
     let result = roundedNum.toString();
     let splitString = result.split('.');
 
+
+    // adding necesary elements after the . to comply with spec
     if (result.indexOf('.') == -1) {
         result += '.00';
     } else if (splitString[1].length == 1) {
